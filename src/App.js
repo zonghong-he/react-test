@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Parent from './ex-0819-3/Parent';
+// import Todo from './ex-0819-2/Todo';
+import MainHeader from './map/MainHeader';
+import Home from './Memorandum/Home';
 
 function App() {
+  const [total, setTotal] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainHeader />
+      <Home />
+      <Parent />
+      {/* <Todo /> */}
+      {/* <Student /> */}
+      {/* <Proudcts/> */}
+    </>
   );
 }
 
